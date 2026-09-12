@@ -18,7 +18,7 @@ function AddJob() {
     try {
       const user = JSON.parse(localStorage.getItem("user"));
 
-      await axios.post("http://localhost:5000/api/jobs", {
+      await axios.post("https://ai-resume-job-tracker-backend.onrender.com/api/jobs", {
         userId: user.id,
         company,
         jobTitle,

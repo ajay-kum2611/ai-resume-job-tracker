@@ -10,7 +10,7 @@ function Applications() {
         const user = JSON.parse(localStorage.getItem("user"));
 
         const response = await axios.get(
-          `http://localhost:5000/api/applications/${user.id}`,
+          `https://ai-resume-job-tracker-backend.onrender.com/api/applications/${user.id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

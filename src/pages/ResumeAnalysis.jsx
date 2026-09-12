@@ -15,7 +15,7 @@ function ResumeAnalysis() {
     const fetchResume = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/resumes/${user.id}`,
+          `https://ai-resume-job-tracker-backend.onrender.com/api/resumes/${user.id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -39,7 +39,7 @@ function ResumeAnalysis() {
     setAnalyzing(true);
 
     const response = await axios.post(
-      "http://localhost:5000/api/ai/analyze-resume",
+      "https://ai-resume-job-tracker-backend.onrender.com/api/ai/analyze-resume",
       {
         summary: resume.summary,
         skills: resume.skills,

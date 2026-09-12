@@ -20,7 +20,7 @@ function Resume() {
     const fetchResume = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/resumes/${user.id}`,
+          `https://ai-resume-job-tracker-backend.onrender.com/api/resumes/${user.id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -60,7 +60,7 @@ function Resume() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/resumes", {
+      await axios.post("https://ai-resume-job-tracker-backend.onrender.com/api/resumes", {
         userId: user.id,
         title: formData.title,
         summary: formData.summary,

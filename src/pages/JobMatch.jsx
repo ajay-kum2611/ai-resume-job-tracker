@@ -16,7 +16,7 @@ function JobMatch() {
     const fetchData = async () => {
       try {
         const jobsResponse = await axios.get(
-          `http://localhost:5000/api/jobs/${user.id}`,
+          `https://ai-resume-job-tracker-backend.onrender.com/api/jobs/${user.id}`,
               {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -27,7 +27,7 @@ function JobMatch() {
         setJobs(jobsResponse.data);
 
         const resumeResponse = await axios.get(
-          `http://localhost:5000/api/resumes/${user.id}`,
+          `https://ai-resume-job-tracker-backend.onrender.com/api/resumes/${user.id}`,
               {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -64,7 +64,7 @@ function JobMatch() {
       setResult(null);
 
       const response = await axios.post(
-        "http://localhost:5000/api/job-match/match",
+        "https://ai-resume-job-tracker-backend.onrender.com/api/job-match/match",
         {
           resume,
           job,

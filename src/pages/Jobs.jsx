@@ -17,7 +17,7 @@ function Jobs() {
 
   try {
     await axios.delete(
-      `http://localhost:5000/api/jobs/${jobId}`,
+      `https://ai-resume-job-tracker-backend.onrender.com/api/jobs/${jobId}`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -41,7 +41,7 @@ function Jobs() {
         const user = JSON.parse(localStorage.getItem("user"));
 
         const response = await axios.get(
-          `http://localhost:5000/api/jobs/${user.id}`,
+          `https://ai-resume-job-tracker-backend.onrender.com/api/jobs/${user.id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
