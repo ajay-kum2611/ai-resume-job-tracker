@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Jobs() {
   const navigate = useNavigate();
@@ -63,6 +64,13 @@ function Jobs() {
       <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 mb-2">
         Jobs
       </h1>
+
+      <Link
+        to="/add-job"
+        className="rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md"
+      >
+        + Add Job
+      </Link>
 
       <p className="text-slate-500 mb-8 text-base">
         Track your job opportunities
