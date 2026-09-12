@@ -60,21 +60,27 @@ function Jobs() {
   }, []);
 
   return (
-    <div className="flex w-full items-start justify-between mb-2">
-      <h1 className="text-4xl font-extrabold tracking-tight text-slate-900">
-        Jobs
-      </h1>
+    <div className="min-h-screen w-full flex-1 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 p-8">
+
+    {/* Header - flex instead of relative/absolute */}
+    <div className="flex items-center justify-between mb-8 w-full flex-wrap gap-4">
+      <div>
+        <h1 className="text-4xl font-extrabold tracking-tight text-slate-900">
+          Jobs
+        </h1>
+        <p className="mt-2 text-base text-slate-500">
+          Track your job opportunities
+        </p>
+      </div>
 
       <Link
         to="/add-job"
-        className="rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-md"
+        className="rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white shadow-sm transition-all duration-200 hover:bg-blue-700"
       >
         + Add Job
       </Link>
+    </div>
 
-      <p className="text-slate-500 mb-8 text-base">
-        Track your job opportunities
-      </p>
 
       {jobs.length === 0 ? (
         <p className="text-gray-500">
