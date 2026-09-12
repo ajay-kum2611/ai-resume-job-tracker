@@ -60,8 +60,8 @@ function Jobs() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 p-8">
-      <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 mb-2">
+    <div className="flex w-full items-start justify-between mb-2">
+      <h1 className="text-4xl font-extrabold tracking-tight text-slate-900">
         Jobs
       </h1>
 
