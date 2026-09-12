@@ -1,16 +1,77 @@
-# React + Vite
+# AI Resume & Job Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered full-stack web application that helps users manage their resumes, track job opportunities, manage applications, and analyze how well their resume matches a job.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔐 User Registration & Login
+- 📊 Personalized Dashboard
+- 📄 Resume Creation & Management
+- 🤖 AI Resume Analysis
+- 💼 Job Tracking
+- ✏️ Add, Edit & Delete Jobs
+- 📋 Application Tracking
+- 🎯 AI-powered Job Match Score
+- 🧠 Matching & Missing Skills Analysis
+- 👤 User Profile
+- 📱 Responsive UI
+- 🔒 JWT Authentication
 
-## React Compiler
+## 🤖 AI Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application uses Google Gemini AI to provide:
 
-## Expanding the ESLint configuration
+- Resume quality analysis
+- Resume strengths and weaknesses
+- Improvement suggestions
+- Job-resume matching score
+- Matching skills
+- Missing skills
+- Job-specific recommendations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- Axios
+- React Router
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcrypt
+
+### AI
+- Google Gemini API
+
+## 📁 Project Structure
+
+```text
+ai-resume-job-tracker/
+│
+├── backend/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── vite.config.js
